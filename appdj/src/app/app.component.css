@@ -1,0 +1,149 @@
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+header{
+	width: 100%;    
+	height: 110px;
+    border-radius: 6px;	
+    text-align: center;    
+	background: linear-gradient(90deg, rgba(1,2,45,1) 0%, rgba(2,3,100,1) 35%, rgba(3,4,200,1) 100%); 		
+}
+
+#naslov{	
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    width: 250px;
+    height: 100px;
+  }
+  
+.natpis{
+	width: 120px;
+    height: 80px;	
+	margin: 10px 50px 10px 340px;		
+	padding: 20px 250px 25px 115px;	
+    border-radius: 8px;	
+	border: none;
+	text-align: center;
+	font-family: "TimesNewRoman";
+	font-size: 30px;
+	color: white;	
+	background-color: rgba(0,25,130,0.8);   
+}
+
+.poruka {	
+	border-radius: 8px;
+	border: none;
+	color: white;	
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: "TimesNewRoman";
+	font-size: 30px;
+	margin: 10px 10px;
+	padding: 15px;
+	cursor: pointer;
+	width: 225px;
+    height: 85px;	
+	background-color: rgba(0,25,130,0.8);
+ }
+ 
+#tablica {
+	font-family: "TimesNewRoman";
+	font-size: 20px;
+	color: rgb(0,10,35);	
+	width: 110%;
+	margin-left:200px;
+} 
+
+#tnaslov{
+	font-family: "TimesNewRoman";
+	font-size: 20px;
+	height: 55px;	
+	background: rgba(230,240,245,0.8);
+	border-radius: 10px;	
+	text-align: center;
+}  
+
+#red{
+	font-family: "TimesNewRoman";
+	font-size: 20px;
+	height: 55px;
+    border-radius: 8px;
+    text-align: center;	
+}
+   
+h1{
+	font-family: "TimesNewRoman";
+	font-size: 30px;
+	margin: 10px 10px 10px 10px;
+	color: rgb(250,250,250);
+  }
+  
+h2
+  {  
+    font-family: "TimesNewRoman";
+	font-size: 30px;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 70px 100px 400px;		
+	color: rgb(230,230,200);
+  }
+
+#dno{    				
+		margin: 25px 500px 15px 10px;		
+		padding: 25px 100px 15px 570px;		
+  }
+  
+footer {
+    margin: 50px 250px 200px 10px;
+	border-radius: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 10px;
+	position: absolute;
+    bottom: 0;
+    width: 100%;    
+	height: 105px;	
+    text-align: center;
+    color: white;
+	background: linear-gradient(90deg, rgba(1,2,36,1) 0%, rgba(2,3,100,1) 35%, rgba(3,4,200,1) 100%);
+  }  
+  
+ .appdj {
+		background-color: rgba(250,250,250,0.8);
+		display: flex;
+		margin: 20px 10px 100px 50px;
+		padding: 15px 10px 100px 100px;
+		width: 85%;
+		height: 80%;
+		flex-direction: column;
+		align-items: center;
+  }    
+  	  
+  .toolbar {
+		margin: 5px;
+  }  
+  
+  #sti{	  
+	  width: 80px;
+	  text-align: center;    
+  }
+  
+  #sta,#stb {	  
+	  width: 200px;
+  }
+  
+  #stc, #std {	  
+	  width: 150px;
+  }
+  
+  #ste {	  
+	  width: 300px;
+  }
+    
+  button: hover {
+		background-color: rgba(5,10,30,0.5);   
+		border-width: 3px;
+  }
+     
+

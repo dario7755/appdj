@@ -1,0 +1,109 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">  
+  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+<script>
+  angular.module('ngRepeat', ['ngAnimate']).controller('repeatController', function($scope) {
+	$scope.os = Osobe; 
+  });
+
+  function kwp() {
+  // document.getElementById("demo").innerHTML = "Hello World";
+  var tbl = document.getElementById("tablica");
+  var b = document.getElementById("tb");
+  var r = document.getElementById("red");
+  var di = document.getElementById("sti");
+  var da = document.getElementById("sta");
+  var db = document.getElementById("stb");
+  var dc = document.getElementById("stc");
+  var dd = document.getElementById("std");
+  var de = document.getElementById("std");
+  
+  // *ngFor = "let os of Osobe | sort:'ime'"
+  
+  var red = tbl.insertRow(0);
+  
+  var mj0 = red.insertCell(0);
+  var mj1 = red.insertCell(1);
+  var mj2 = red.insertCell(2);
+  var mj3 = red.insertCell(3);
+  var mj4 = red.insertCell(4);
+  var mj5 = red.insertCell(5);
+  
+  mj0.innerHTML = "ID";
+  mj1.innerHTML = "IME";
+  mj2.innerHTML = "PREZIME";
+  mj3.innerHTML = "IQ";
+  mj4.innerHTML = "T";
+  mj4.innerHTML = "E-mail";
+  // mj1.innerHTML = os.ime;
+  // mj2.innerHTML = os.prezime;  
+}
+</script>
+
+</head>  
+
+<body >
+ 
+<header>
+<div id="naslov" class="toolbar" role="banner">
+<table>
+<tr><td>
+<svg id="appsvg" width="180" height="100" >
+   <defs>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:rgb(40,70,100);stop-opacity:0" />
+      <stop offset="100%" style="stop-color:rgb(30,100,180);stop-opacity:1" />
+    </radialGradient>
+   </defs>
+   <ellipse cx="100" cy="50" rx="75" ry="50" fill="url(#grad1)" />
+  </svg>
+</td> 
+<input type="button" class="btn natpis" value="DJapp">
+<td>
+</td>
+</tr>  
+</table>  
+</div>    
+</header>
+<div id="tekst" class="appdj" role="main" >
+	<table id="tablica" class="display" style="width:100%">
+        <thead>
+            <tr id="tnaslov">
+                <th>id</th>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>IQ</th>
+                <th>t</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <tbody id="tb">
+			<tr *ngFor="let os of Osobe; let id = first; let ime = last" id="red" >
+				<td id="sti">{{os.id}}</td>
+				<td id="sta">{{os.ime}}</td>
+				<td id="stb">{{os.prezime}}</td>
+				<td id="stc">{{os.iq}}</td>
+				<td id="std">{{os.t}}</td>
+				<td id="ste">{{os.email}}</td>
+			</tr>            
+        </tbody>		
+    </table>
+</div>		
+<br>
+<div ng-app="myApp" ng-controller="myCtrl">
+<footer id="dno">
+	<button ng-click="kwp()" class="button poruka" >KWP</button>
+</footer>
+	
+</div>			
+<br>
+  
+<script src="myApp.js"></script>
+<script src="myCtrl.js"></script>
+
+</body>
+
+</html>
+

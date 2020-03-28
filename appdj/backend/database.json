@@ -1,0 +1,14 @@
+{
+  "bugtracking": [
+    {
+      "objekt_naziv": "Objekt 1",
+      "objekt_poruka": "Objekt 1 je O.K.",
+      "id": 1
+    },
+    {
+      "objekt_naziv": "Objekt 2",
+      "objekt_poruka": "Objekt 2 se popravlja.",
+      "id": 2
+    }
+  ]
+}
